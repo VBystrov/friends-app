@@ -24,7 +24,8 @@ body {
 @media screen and (max-width: 1000px) {
   .wrapper {
     grid-template-columns: 1fr;
-    grid-template-rows: 80px 210px 1fr;
+    grid-template-rows: 80px;
+    grid-auto-rows: min-content;
     grid-template-areas:
       'header '
       'searchbar'
