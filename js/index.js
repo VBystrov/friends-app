@@ -72,7 +72,9 @@ class Friendlist {
 
     if (search.name) {
       this.filteredCards = this.filteredCards.filter((card) =>
-        `${card.firstName} ${card.lastName}`.includes(search.name)
+        `${card.firstName} ${card.lastName}`
+          .toLowerCase()
+          .includes(search.name.toLowerCase())
       );
     }
 
